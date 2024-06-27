@@ -1,0 +1,10 @@
+body {
+  @apply font-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Unused class, fixes issue with relative _font paths in production for IBM Plex Mono font */
+.font-mono-scan-me { 
+  @apply font-mono;
+}
