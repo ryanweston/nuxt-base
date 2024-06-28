@@ -8,10 +8,10 @@ A base template for Nuxt projects. Includes everything you need to get started.
 - Basic UnoCSS for styling.
 - Custom font configuration that works with UnoCSS.
 - ESLint configuration, courtesy of antfu.
+- Dark mode
 
 ⌛️ Soon to come:
 
-- Dark mode.
 - Testing suite configuration
 - Iconify for icons, works with UnoCSS.
 
