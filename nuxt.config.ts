@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxt/content',
+    '@nuxtjs/color-mode',
     '@unocss/nuxt',
     '@nuxt/fonts',
     'nuxt-og-image',
@@ -10,6 +11,9 @@ export default defineNuxtConfig({
     'nuxt-simple-robots',
   ],
   site: { indexable: process.env.NUXT_SITE_ENV === 'production' },
+  colorMode: {
+    classSuffix: '',
+  },
   css: [
     '@unocss/reset/tailwind.css',
     '~/assets/styles/main.css',

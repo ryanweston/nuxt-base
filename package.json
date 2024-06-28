@@ -13,6 +13,7 @@
     "@nuxt/content": "^2.12.1",
     "@nuxt/devtools": "latest",
     "@nuxt/fonts": "^0.6.1",
+    "@nuxtjs/color-mode": "^3.4.2",
     "@nuxtjs/sitemap": "^5.2.0",
     "@unocss/nuxt": "^0.60.4",
     "nuxt": "^3.11.2",

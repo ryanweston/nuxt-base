@@ -10,5 +10,6 @@
       nuxt-base
     </NuxtLink>
     <slot />
+    <ThemeToggle />
   </main>
 </template>

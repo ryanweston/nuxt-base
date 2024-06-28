@@ -1,5 +1,5 @@
 body {
-  @apply font-sans;
+  @apply bg-white dark:bg-zinc-950 dark:text-white text-black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
