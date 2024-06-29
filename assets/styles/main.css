@@ -8,3 +8,7 @@ body {
 .font-mono-scan-me { 
   @apply font-mono;
 }
+
+.icon {
+ @apply align-middle inline-block h-[1.2em] w-[1.2em]; 
+}

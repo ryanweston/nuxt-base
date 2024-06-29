@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     '@nuxtjs/sitemap',
     'nuxt-simple-robots',
+    '@nuxt/icon',
   ],
   site: { indexable: process.env.NUXT_SITE_ENV === 'production' },
   colorMode: {
