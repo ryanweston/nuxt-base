@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   ],
   fonts: {
     families: [
-      { name: 'IBM Plex Mono', provider: 'bunny' },
+      { name: 'IBM Plex Mono', provider: 'bunny', preload: true },
     ],
   },
   ogImage: {
