@@ -1,24 +1,18 @@
-# A Nuxt 3 starting point
+# a nuxt 3 starting point
 
-A base template for Nuxt projects. Includes everything you need to get started.
+> a base template for Nuxt projects, with all you need to get started
 
-- A basic markdown content configuration.
-- Dynamic OG images.
-- Configurable sitemap w/ a basic content endpoint.
-- Basic UnoCSS for styling.
-- Custom font configuration that works with UnoCSS.
-- ESLint configuration, courtesy of antfu.
-- Dark mode
+- [@nuxt/content](https://github.com/nuxt/content) - Example of a simple content route
+- [nuxt-og-image](https://github.com/nuxt-modules/og-image) - Dynamic OG image components with custom font config
+- [@nuxtjs/sitemap](https://github.com/nuxt-modules/sitemap) - Sitemap with server route example
+- [unocss](https://github.com/unocss/unocss) - Atomic CSS
+- [@nuxt/fonts](https://github.com/nuxt/fonts) - Preload custom fonts
+- [@antfu/eslint-config](https://github.com/antfu/eslint-config) - Flat ESLint configuration
+- [@nuxtjs/color-mode](https://github.com/nuxt-modules/color-mode) - No explanation needed
+- [@nuxt/icon](https://github.com/nuxt/icon) - Iconify CSS icon config
 
-⌛️ Soon to come:
+- ⌛️ testing suite configuration
 
-- Testing suite configuration
-- Iconify for icons, works with UnoCSS.
+### Further reading
 
-## Next steps
-
-For further optimisations and relevant further reading.
-
-#### Persistent cache setup for OG images
-
-Coming soon.
+- Persistent OG image cache setup: https://nuxtseo.com/og-image/guides/cache#cache-storage
