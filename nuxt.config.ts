@@ -18,17 +18,17 @@ export default defineNuxtConfig({
     '@unocss/reset/tailwind.css',
     '~/assets/styles/main.css',
   ],
+  fonts: {
+    families: [
+      { name: 'IBM Plex Mono', provider: 'bunny' },
+    ],
+  },
   ogImage: {
     fonts: [
       'Inter:400',
       'Inter:500',
       'IBM+Plex+Mono:400',
     ],
-  },
-  fonts: {
-    experimental: {
-      addPreloadLinks: true,
-    },
   },
   sitemap: {
     sources: [

@@ -6,7 +6,7 @@ export default defineConfig({
   ],
   theme: {
     fontFamily: {
-      sans: ['Inter var', 'Inter', 'sans-serif'],
+      sans: ['Inter var', 'sans-serif'],
       mono: ['IBM Plex Mono'],
     },
   },
