@@ -13,10 +13,14 @@ const color = computed({
 
 <template>
   <div class="flex items-center gap-2">
-    <label for="theme-input">Dark mode</label>
+    <label
+      for="theme-input"
+      class="text-sm font-mono"
+    >Dark mode</label>
     <input
       id="theme-input"
       v-model="color"
+      class="hover:cursor-pointer"
       value="dark"
       type="checkbox"
     >

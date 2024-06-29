@@ -2,13 +2,18 @@
 </script>
 
 <template>
-  <main class="flex items-center flex-col justify-center p-14 gap-10">
-    <NuxtLink
-      to="/"
-      class="font-mono"
-    >
-      nuxt-base
-    </NuxtLink>
+  <main class="flex items-center flex-col w-screen h-screen justify-center p-14 gap-8">
+    <div class="flex flex-col items-center gap-1">
+      <NuxtLink
+        to="/"
+        class="font-mono text-xl"
+      >
+        nuxt-base
+      </NuxtLink>
+      <p class="text-sm dark:text-zinc-400 text-zinc-500">
+        a nuxt 3 base template
+      </p>
+    </div>
     <slot />
     <ThemeToggle />
   </main>
