@@ -18,6 +18,13 @@ export default defineNuxtConfig({
     '@unocss/reset/tailwind.css',
     '~/assets/styles/main.css',
   ],
+  ogImage: {
+    fonts: [
+      'Inter:400',
+      'Inter:500',
+      'IBM+Plex+Mono:400',
+    ],
+  },
   fonts: {
     experimental: {
       addPreloadLinks: true,
