@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     'nuxt-og-image',
     '@nuxtjs/sitemap',
-    'nuxt-simple-robots',
+    '@nuxtjs/robots',
     '@nuxt/icon',
   ],
 
