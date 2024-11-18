@@ -7,9 +7,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@unocss/nuxt',
     '@nuxt/fonts',
-    'nuxt-og-image',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/robots',
+    '@nuxtjs/seo',
     '@nuxt/icon',
   ],
 
