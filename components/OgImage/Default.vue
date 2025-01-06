@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
   <div class="w-full h-full flex justify-between relative items-center p-20 bg-white">
-    <div class="flex flex-col gap-2 grow items-center justify-center">
+    <div class="flex items-center flex-col gap-2 grow justify-center">
       <h1
         v-if="title"
         style="font-family:'IBM+Plex+Mono'"

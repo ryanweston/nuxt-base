@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
 
   modules: [
     '@nuxt/content',
@@ -11,6 +10,12 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/eslint',
   ],
+  devtools: { enabled: true },
+
+  css: [
+    '@unocss/reset/tailwind.css',
+    '~/assets/styles/main.css',
+  ],
 
   site: { indexable: process.env.NUXT_SITE_ENV === 'production' },
 
@@ -18,10 +23,23 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
-  css: [
-    '@unocss/reset/tailwind.css',
-    '~/assets/styles/main.css',
-  ],
+  compatibilityDate: '2024-07-31',
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/sitemap.xml'],
+    },
+  },
+
+  eslint: {
+    config: {
+      standalone: false,
+      nuxt: {
+        sortConfigKeys: true,
+      },
+    },
+  },
 
   fonts: {
     families: [
@@ -45,22 +63,4 @@ export default defineNuxtConfig({
       '/api/__sitemap__/example-content',
     ],
   },
-
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ['/', '/sitemap.xml'],
-    },
-  },
-
-  eslint: {
-    config: {
-      standalone: false,
-      nuxt: {
-        sortConfigKeys: true,
-      },
-    },
-  },
-
-  compatibilityDate: '2024-07-31',
 })

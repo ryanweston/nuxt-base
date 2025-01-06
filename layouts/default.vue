@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <main class="flex items-center flex-col w-screen h-screen justify-center p-14 gap-8">
+  <main class="flex items-center flex-col justify-center w-screen h-screen p-14 gap-8">
     <div class="flex flex-col items-center gap-1">
       <NuxtLink
         to="/"
