@@ -1,8 +1,9 @@
 <script lang="ts" setup>
-const slug = useRoute().params.slug
+const route = useRoute()
 
-const { data } = await useAsyncData(`${slug[0]}`, () => queryContent().where({ _path: { $eq: `/${slug[0]}` as string } }).findOne(),
-)
+const { data } = await useAsyncData(route.path, () => {
+  return queryCollection('content').path(route.path).first()
+})
 
 defineOgImageComponent('Content', {
   title: data.value?.title,
@@ -21,7 +22,8 @@ useSeoMeta({
   <ContentRenderer
     v-if="data"
     :value="data"
-  >
-    <ContentRendererMarkdown :value="data" />
-  </ContentRenderer>
+  />
+  <template v-else>
+    <h1>Page Not Found</h1>
+  </template>
 </template>

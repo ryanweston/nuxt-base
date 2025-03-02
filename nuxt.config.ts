@@ -2,11 +2,13 @@
 export default defineNuxtConfig({
 
   modules: [
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
     '@nuxt/content',
     '@nuxtjs/color-mode',
     '@unocss/nuxt',
     '@nuxt/fonts',
-    '@nuxtjs/seo',
+    'nuxt-og-image',
     '@nuxt/icon',
     '@nuxt/eslint',
   ],

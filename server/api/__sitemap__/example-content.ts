@@ -1,16 +1,11 @@
-import { serverQueryContent } from '#content/server'
-
 export default defineSitemapEventHandler(async (event) => {
-  const contentList = await serverQueryContent(event)
-    .where({ draft: { $not: true } })
-    .sort({ date: -1 })
-    .only(['_path'])
-    .find()
+  const contentList = await queryCollection(event, 'content')
+    .all()
 
   const postUrls = contentList.map((c) => {
     return asSitemapUrl({
-      loc: c._path,
-      lastmod: new Date(), // TODO: Use a last updated frontmatter field
+      loc: c.path,
+      lastmod: new Date(),
     })
   })
 
