@@ -19,11 +19,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <ContentRenderer
-    v-if="data"
-    :value="data"
-  />
-  <template v-else>
-    <h1>Page Not Found</h1>
-  </template>
+  <div>
+    <ContentRenderer
+      v-if="data"
+      :value="data"
+    />
+    <template v-else>
+      <h1>Page Not Found</h1>
+    </template>
+  </div>
 </template>

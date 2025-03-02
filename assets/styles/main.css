@@ -5,10 +5,10 @@ body {
 }
 
 /* Unused class, fixes issue with relative _font paths in production for IBM Plex Mono font */
-.font-mono-scan-me { 
+.font-mono-scan-me {
   @apply font-mono;
 }
 
 .icon {
- @apply align-middle inline-block h-[1.2em] w-[1.2em]; 
+  @apply align-middle inline-block h-[1.2em] w-[1.2em];
 }
