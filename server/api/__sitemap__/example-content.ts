@@ -1,8 +1,7 @@
 export default defineSitemapEventHandler(async (event) => {
-  const contentList = await queryCollection(event, 'content')
-    .all()
+  const contentList = await queryCollection(event, 'content').all()
 
-  const postUrls = contentList.map((c) => {
+  const postUrls = contentList.map((c: any) => {
     return asSitemapUrl({
       loc: c.path,
       lastmod: new Date(),
